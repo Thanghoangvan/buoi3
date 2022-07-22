@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <legend>
+        <b>Enter foot</b>
+        <input type="text" id="01" placeholder="foot">
+    </legend>
+    <legend>
+        <b>Enter meters</b>
+        <input type="text" id="02" placeholder="meters">
+    </legend>
+    <p id="03"></p>
+    <button onclick="calc()">Check</button>
+</body>
+</html>
+<script>
+    function foottometers(a){
+        debugger;
+      return (a*0.305)
+    }
+    function meterstofoot(b){
+        debugger;
+        return (b*3.279)
+    }
+    
+    function calc(){
+        debugger;
+        let x=document.getElementById("01").value;
+        let y=document.getElementById("02").value;
+     let z="The meters is  "+ foottometers(x)+"<br>"+"The foot is  "+ meterstofoot(y)
+       document.getElementById("03").innerHTML=z
+   
+
+    }
+    
+</script>
