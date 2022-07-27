@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    debugger;
+    class calc{
+        constructor(num1,num2,cl){
+            this.number1=num1;
+            this.number2=num2;
+            this.color=cl;
+        }
+        
+        getNumber1() {
+          return this.number1;
+        }
+        getNumber2(){
+            return this.number2;
+        }
+        
+        
+        Add(){
+            return this.number1+this.number2
+        }
+        Sub(){
+            return this.number1-this.number2
+        }
+    }
+    let casio=new calc(7,9,"red")
+    
+    document.write(casio.Add())
+</script>

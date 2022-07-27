@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    debugger;
+    class Circle {
+constructor(radius,color){
+    this.radius=radius;
+    this.color=color;
+    
+}
+getRadius(){
+     return this.radius
+    }
+    getArea(){
+        return Math.PI *this.radius * this.radius;
+    }
+}
+
+
+let circle1= new Circle(100,"red")
+document.write("Bán kính là "+circle1.getRadius() +"<br>"+ "Area là  "+ circle1.getArea())
+
+</script>
