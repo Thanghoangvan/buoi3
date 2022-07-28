@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class tem {
+        constructor(c){
+            this.c=c;
+   
+        }
+        calcC(){
+            return this.c;
+        }
+        calcF(){
+            return (this.c*1.8)+32
+        }
+    } 
+    let tem2= new tem(25)
+    document.write("Độ C là:"+ tem2.calcC()+"<br>"+"Độ F là: "+tem2.calcF())
+</script>
