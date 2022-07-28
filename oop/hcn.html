@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mydemo" height="500px" width="400px" style="border:1px solid"></canvas>
+</body>
+</html>
+<script>
+  
+    class hcn{
+        constructor(length,height){
+            this.length=length;
+            this.height=height;
+        }
+        cvi(){
+            return (this.length+this.height)*2;
+        }
+        dt(){
+            return this.length*this.height;
+        }
+
+    }
+    let hcn1=new hcn(70,80)
+    alert("Chu vi của hcn là:"+ hcn1.cvi()+"<br>"+'Diện tích hcn là:'+hcn1.dt())
+   let canvas=document.getElementById("mydemo");
+   let ctx=canvas.getContext("2d");
+   ctx.beginPath()
+   ctx.fillRect(50,50,hcn1.length,hcn1.height)
+   ctx.stroke()
+</script>
