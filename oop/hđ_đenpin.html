@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class battery{
+  constructor(energy){
+    this.energy=energy;
+  }
+  getenergy(){
+    return this.energy;
+  }
+  setenergy(){
+   this.energy=energy;
+}
+decreaseenery(){
+    if(this.energy>0){
+       this.energy--
+    }
+}}
+class lamp{
+    constructor(status,battery){
+        this.status=status;
+      this.battery=battery
+    }
+    getbattery(){
+        this.battery=battery;
+    }
+    setbatteryinfo(){
+        return this.battery;
+    }
+    light(){
+        if(this.status=="true"){
+       alert("lighting")
+        }
+        else{
+            alert("unlighting")
+        }
+    }
+    turnon(){
+        this.status="true"
+    }
+    turnoff(){
+        this.status="false"
+    }
+}
+let lamp1= new lamp(true,2)
+let battery1= new battery(lamp1.battery)
+let lamp2= new lamp(false,5)
+</script>
